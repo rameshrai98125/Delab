@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="cursor w-10 fixed z-10 mix-blend-difference h-10 rounded-full bg-zinc-500"
+    ></div>
+    <div class="main overflow-hidden bg-zinc-900 px-10 md:px-32">
+      <div class="page1 w-full min-h-screen">
+        <div
+          class="nav w-full py-7 border-b-2 border-zinc-800 flex justify-between items-center"
+        >
+          <div class="logo">
+            <!-- <span
+              class="border-2 shadow px-[1%] py-[%] rounded-full border-green-500"
+            ></span> -->
+            <h1 class="text-xl text-zinc-200">Delab</h1>
+          </div>
+          <div class="links hidden justify-center ml-10 md:flex items-center">
+            <a class="text-zinc-200 px-6 border-r-2 border-zinc-200" href="#"
+              >Product</a
+            >
+            <a class="text-zinc-200 px-6 border-r-2 border-zinc-200" href="#"
+              >Service</a
+            >
+            <a class="text-zinc-200 px-6" href="#">Info</a>
+          </div>
+          <div class="contact md:block hidden">
+            <a
+              class="px-6 py-2 border-[1px] text-zinc-200 font-black rounded-full border-zinc-200"
+              href="#"
+              >Contact
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="menu cursor-pointer md:hidden text-white text-2xl">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+
+        <!-- mobile  -->
+        <div class="">
+          <div
+            id="mobile"
+            class="links translate-x-[-200%] md:hidden flex flex-col gap-8 fixed z-10 top-0 left-0 bg-zinc-800 p-20 px-5 w-full h-screen"
+          >
+            <div
+              class="close cursor-pointer text-zinc-200 text-4xl fixed top-6 right-8 z-10"
+            >
+              <i class="ri-close-fill"></i>
+            </div>
+            <h1>
+              <a class="text-zinc-200 hover:text-zinc-200/80 text-6xl" href="#"
+                >Product</a
+              >
+            </h1>
+            <h1>
+              <a class="text-zinc-200 hover:text-zinc-200/80 text-6xl" href="#"
+                >Service</a
+              >
+            </h1>
+            <h1>
+              <a class="text-zinc-200 hover:text-zinc-200/80 text-5xl" href="#"
+                >Info</a
+              >
+            </h1>
+            <div class="contact md:block">
+              <a
+                class="px-6 py-2 border-[1px] text-zinc-200 font-black rounded-full border-zinc-200"
+                href="#"
+                >Contact
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- hero  -->
+        <div
+          class="hero flex justify-center pt-28 min-h-[100vh] relative md:h-[87vh]"
+        >
+          <div class="text-center">
+            <h1 class="md:text-7xl text-4xl text-zinc-200">
+              Building Brands that leave
+            </h1>
+            <h1 class="md:text-7xl text-4xl text-zinc-200 my-2">
+              a Lasting Impression
+            </h1>
+            <p class="md:w-[55%] mt-16 mb-6 text-zinc-200 text-center mx-auto">
+              Elevate Your Brand With Exquisite Design: Empowering Creativity,
+              Inspirina Innovation.
+            </p>
+            <div class="star flex gap-5 text-sm text-zinc-200 justify-center">
+              <p class="text-xs text-green-700 font-semibold">
+                5 Star Review On
+              </p>
+              <span class="flex font-medium items-center justify-center gap-2"
+                ><i class="ri-bard-fill"></i>
+                <p>GrabStar</p>
+              </span>
+              <div id="headerImg" class="img flex">
+                <img
+                  class="w-5 h-5 -mr-2 object-cover rounded-full"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHN8ZW58MHx8MHx8fDA%3D"
+                  alt=""
+                />
+                <img
+                  class="w-5 h-5 -mr-2 object-cover rounded-full"
+                  src="https://images.unsplash.com/photo-1627067227573-07bc616f46ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdpcmxzfGVufDB8fDB8fHww"
+                  alt=""
+                />
+                <img
+                  class="w-5 h-5 object-cover rounded-full"
+                  src="https://images.unsplash.com/photo-1586907835000-f692bbd4c9e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdpcmxzfGVufDB8fDB8fHww"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="contact md:mt-10 my-20">
+              <a
+                class="md:px-8 px-6 md:py-3 py-2 border-[1px] md:text-3xl text-xl text-center text-zinc-400 font-normal rounded-full border-zinc-200"
+                href="#"
+                >Contact
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 2  -->
+      <div
+        class="client w-full md:h-[30vh] flex-wrap md:flex-row flex-col flex justify-around items-center"
+      >
+        <div
+          class="elem text-center text-zinc-200 border-zinc-800 md:border-r-2 border-b-2 md:w-1/4"
+        >
+          <span class="text-6xl">2K</span>
+          <h2 class="text-2xl text-zinc-400">Client</h2>
+        </div>
+        <div
+          class="elem text-zinc-200 my-10 md:my-0 text-center md:border-r-2 border-b-2 border-zinc-800 md:w-1/3"
+        >
+          <span class="text-6xl">32K</span>
+          <h2 class="text-2xl text-zinc-400">Strong Designer</h2>
+        </div>
+        <div
+          class="elem text-center border-zinc-800 border-b-2 md:border-none text-zinc-200 md:w-1/5"
+        >
+          <span class="text-6xl">120K</span>
+          <h2 class="text-2xl text-zinc-400">Project Done</h2>
+        </div>
+      </div>
+
+      <!-- page 3  -->
+      <div class="approch w-full mt-20 min-h-screen">
+        <div
+          class="flex flex-wrap md:justify-between text-center justify-center text-zinc-200"
+        >
+          <h1 class="md:text-6xl text-4xl mb-5 md:mb-0 leading-none">
+            Our Approach
+          </h1>
+          <p class="md:w-40 text-center w-40 text-zinc-400 md:text-end text-lg">
+            Create digital products through our powerful team.
+          </p>
+        </div>
+
+        <div class="design mt-28 relative w-full h-screen md:px-20">
+          <!-- line  -->
+          <div
+            class="v-click -rotate-90 md:block hidden top-20 absolute -left-[100px] flex gap-5 items-center"
+          >
+            <a href="#" class="text-sm text-zinc-300 font-semibold"
+              >click to more</a
+            >
+            <div class="line w-28 h-[1.5px] bg-zinc-300"></div>
+          </div>
+
+          <div class="w-full h-full">
+            <div class="w-full py-10 flex justify-between items-center">
+              <div class="text-zinc-200">
+                <h2 class="md:text-4xl text-xl">Design Reaserch</h2>
+                <p class="text-zinc-600 text-xs md:text-sm mt-3">
+                  Research, discussion, meetings, sketches, prototypes, <br />
+                  interface, and motion graphics.
+                </p>
+              </div>
+              <div>
+                <i
+                  class="ri-arrow-right-line md:text-5xl text-3xl font-regular text-zinc-200"
+                ></i>
+              </div>
+            </div>
+            <div class="w-full py-10 flex justify-between items-center">
+              <div class="text-zinc-200">
+                <h2 class="md:text-4xl text-xl">Interface Design</h2>
+                <p class="text-zinc-600 text-xs md:text-sm mt-3">
+                  Research, discussion, meetings, sketches, prototypes, <br />
+                  interface, and motion graphics.
+                </p>
+              </div>
+              <div>
+                <i
+                  class="ri-arrow-right-line md:text-5xl text-3xl font-regular text-zinc-200"
+                ></i>
+              </div>
+            </div>
+            <div class="w-full py-10 flex justify-between items-center">
+              <div class="text-zinc-200">
+                <h2 class="md:text-4xl text-xl">Brand Identity Design</h2>
+                <p class="text-zinc-600 text-xs md:text-sm mt-3">
+                  Research, discussion, meetings, sketches, prototypes, <br />
+                  interface, and motion graphics.
+                </p>
+              </div>
+              <div>
+                <i
+                  class="ri-arrow-right-line md:text-5xl text-3xl font-regular text-zinc-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- line  -->
+      <hr class="px-20 border-zinc-600" />
+
+      <!-- workers  -->
+
+      <div class="workers w-full h-screen mt-5">
+        <div
+          class="w-full text-zinc-200 py-10 flex flex-wrap justify-between items-center"
+        >
+          <div>
+            <h1 class="md:text-6xl text-3xl mb-10 font-regular">
+              We are a group <br />
+              of workers
+            </h1>
+            <a
+              class="md:px-10 px-4 text-xs md:text-lg py-[10px] border-[2px] border-zinc-200 rounded-full"
+              href="#"
+            >
+              see our team members
+            </a>
+          </div>
+          <p class="md:w-[36%] md:text-end mt-20 md:mt-0 text-md">
+            Our design startup is committed to providing exceptional design
+            solutions tailored to your business needs. With a focus on
+            creativity, innovation, and attention to detail, we are confident
+            that we can elevate your brand and help you stand out in a crowded
+            market.
+          </p>
+        </div>
+        <!-- images  -->
+        <div class="img">
+          <div class="w-full relative md:h-[60vh]">
+            <img
+              class="w-full h-full object-cover object-top rounded-3xl"
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <!-- 1st circle  -->
+            <div
+              class="-md:left-52 -left-28 absolute -md:top-3 top-1 md:w-80 md:h-80 w-40 h-40 bg-[rgba(255,255,255,0.05)] backdrop-blur-[50px] rounded-full"
+            ></div>
+
+            <!-- 2nd circle  -->
+            <div
+              class="-md:right-52 -right-28 absolute md:top-[48%] top-[30%] md:w-80 md:h-80 w-40 h-40 bg-[rgba(255,255,255,0.05)] backdrop-blur-[50px] rounded-full"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- line  -->
+      <hr class="px-20 border-zinc-600 mt-48 mb-5" />
+
+      <!-- recent work  -->
+
+      <!-- <div class="work w-full min-h-screen bg-red-500 relative">
+        <div
+          class="next absolute left-1/2 -translate-x-[50%] -top-20 justify-between items-center"
+        >
+          <div class="swiper-button-next text-zinc-200"></div>
+          <h1 class="mx-20 text-5xl font-semibold text-zinc-200">
+            Recent Work
+          </h1>
+          <div class="swiper-button-prev mr-20"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div data-history="1" class="swiper-slide w-1/2">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1717457782113-42ff5f18a742?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div data-history="Slide 2" class="swiper-slide">Slide 2</div>
+            <div data-history="3" class="swiper-slide">Slide 3</div>
+            <div data-history="Slide 4" class="swiper-slide">Slide 4</div>
+            <div data-history="5" class="swiper-slide">Slide 5</div>
+            <div data-history="Slide 6" class="swiper-slide">Slide 6</div>
+            <div data-history="7" class="swiper-slide">Slide 7</div>
+            <div data-history="Slide 8" class="swiper-slide">Slide 8</div>
+            <div data-history="9" class="swiper-slide">Slide 9</div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- footer  -->
+
+      <footer class="w-full relative mt-52 md:h-[30vh] h-[80vh]">
+        <div class="flex flex-wrap justify-between">
+          <div class="left">
+            <h1 class="text-5xl text-zinc-100">Let's Chat</h1>
+            <p class="text-zinc-400 md:my-4 mb-10">
+              Chat with design lead and solve your problem.
+            </p>
+            <a
+              class="px-6 py-2 border-[1px] text-zinc-200 font-black rounded-full border-zinc-200"
+              href="#"
+              >Contact
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div
+            class="right mt-10 md:mt-0 flex md:flex-row flex-col md:gap-28 gap-10"
+          >
+            <div class="">
+              <h1 class="text-zinc-100 font-semibold">Service</h1>
+              <ul class="text-zinc-400">
+                <li class="md:text-[1vw] mt-[2px]">
+                  <a href="#">Product Design</a>
+                </li>
+                <li class="md:text-[1vw] mt-[2px]">
+                  <a href="#">UI Design</a>
+                </li>
+                <li class="md:text-[1vw] mt-[2px]">
+                  <a href="#">Brand Identity</a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h1 class="text-zinc-100 font-semibold">Follow On</h1>
+              <ul class="text-zinc-400">
+                <li class="md:text-[1vw] mt-[2px]">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="md:text-[1vw] mt-[2px]"><a href="#">Twitter</a></li>
+                <li class="md:text-[1vw] mt-[2px]">
+                  <a href="#">Dribble</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="px-20 border-zinc-600 mt-20 mb-5" />
+      </footer>
+      <div class="b-footer flex py-5 text-zinc-100">
+        <p>&copy;</p>
+        <p>sofwan 2024. All Rights Reserved</p>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 50,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // history: {
+        //   key: "slide",
+        // },
+      });
+    </script>
+  </body>
+</html>
